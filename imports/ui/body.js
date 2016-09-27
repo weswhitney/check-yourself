@@ -4,6 +4,8 @@ import { Tasks } from '../api/tasks.js';
 
 import './body.html';
 
+import './tasks.html';
+
 Template.body.helpers({
   tasks() {
     return Tasks.find({}, { sort: {createdAt: -1 } });
