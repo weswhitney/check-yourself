@@ -15,10 +15,6 @@ Template.task.events({
     Meteor.call('tasks.setChecked', this._id, !this.checked);
   },
   'click .delete'() {
-      console.log('this._id = ' + this._id);
-      console.log('this text = ' + this.text);
-      console.log('this createedAt = ' + this.createdAt);
-      console.log('this username = ' + this.username);
     Meteor.call('tasks.remove', this._id);
   },
   'click .toggle-private'() {
